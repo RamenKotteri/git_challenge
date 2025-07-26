@@ -1,0 +1,52 @@
+♨️  ~ %cd /Users/shinnojofujitsuka/Desktop/
+♨️  Desktop %mkdir git_challenge
+♨️  Desktop %cd /Users/shinnojofujitsuka/Desktop/git_challenge/
+♨️  git_challenge %git init
+Initialized empty Git repository in /Users/shinnojofujitsuka/Desktop/git_challenge/.git/
+♨️  git_challenge %echo "Hello,world! " > hello_world.txt
+♨️  git_challenge %git add hello_world.txt
+♨️  git_challenge %git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   hello_world.txt
+
+♨️  git_challenge %git commit -m"1回目のコミットです。　"
+[main (root-commit) 2a1ebec] 1回目のコミットです。　
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+♨️  git_challenge %git status
+On branch main
+nothing to commit, working tree clean
+♨️  git_challenge %echo "こんにちは、世界！ " >> hello_world.txt
+♨️  git_challenge %bash hello_world.txt
+hello_world.txt: line 1: Hello,world!: command not found
+hello_world.txt: line 2: こんにちは、世界！: command not found
+♨️  git_challenge %git add hello_world.txt
+♨️  git_challenge %git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   hello_world.txt
+
+♨️  git_challenge %git commit -m"2回目のコミットです。 "
+[main 58a71cb] 2回目のコミットです。
+ 1 file changed, 1 insertion(+)
+♨️  git_challenge %git status
+On branch main
+nothing to commit, working tree clean
+♨️  git_challenge %git log
+commit 58a71cb1cc199d84e897cfd885ea6056ab469361 (HEAD -> main)
+Author: RamenKotteri <78hisya@gmail.com>
+Date:   Thu Jul 3 10:49:33 2025 +0900
+
+    2回目のコミットです。
+
+commit 2a1ebec4d4ea9029728dda0a6b58446085e02c1c
+Author: RamenKotteri <78hisya@gmail.com>
+Date:   Thu Jul 3 10:33:25 2025 +0900
+
+    1回目のコミットです。　
